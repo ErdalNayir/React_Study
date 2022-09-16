@@ -1,0 +1,411 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainWrapper {
+  position: absolute;
+  overflow: hidden;
+  top: 7%;
+  left: 15%;
+  width: 70%;
+  height: 85%;
+  z-index: 2;
+  box-shadow: 1rem 1rem 10rem 1rem rgba(0, 0, 0, 0.6);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/images/landmarks/ArkaPlan.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.info {
+  padding: 50px;
+  padding-left: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.details {
+  color: white;
+}
+
+.currentTime {
+  font-size: 4rem;
+}
+
+.datetime {
+  display: flex;
+  padding-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.dayName {
+  padding-right: 5px;
+}
+
+.otherDetails {
+  padding-top: 3.5rem;
+}
+
+span {
+  padding-left: 0.25rem;
+}
+
+.forecast {
+  width: 100%;
+  height: 200px;
+  background: #2e374bda;
+  display: flex;
+  flex-flow: row;
+}
+
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.otherItem {
+  padding-bottom: 20px;
+}
+
+.otherItem > span {
+  padding-left: 0.75rem;
+}
+
+.hdrText {
+  padding-left: 0;
+}
+
+.formPlace {
+  padding-right: 50px;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.otherItem > font {
+  background-color: #2e374bc5;
+  border-radius: 30px;
+  padding: 5px;
+}
+
+.currentTemp {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+  padding-right: 4rem;
+}
+
+.currentImg {
+  height: 11rem;
+  width: 11rem;
+  border: 0px;
+}
+
+.today {
+  background-color: #252c3bef;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 30px;
+}
+
+.temps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -20px;
+  justify-content: center;
+}
+
+.nowTemp {
+  font-size: 3rem;
+}
+
+.forecastTemp {
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.forecastImg {
+  height: 8rem;
+  width: 8rem;
+  border: 0px;
+}
+
+.nextDay {
+  background-color: #252c3bef;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 30px;
+  margin-top: 40px;
+  margin-bottom: -25px;
+}
+
+.forecastTemps {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-top: -30px;
+  padding-bottom: 50px;
+  font-size: 1.25rem;
+}
+
+.forecastTempMax {
+  margin-right: 12px;
+}
+
+.warningImg {
+  height: 20px;
+  width: 20px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.selectCity {
+  margin-left: 0px;
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.selectCity:focus {
+  transition: 4s;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+}
+
+select option {
+  background-color: transparent;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.loadingGif {
+  height: 30px;
+  width: 30px;
+}
+
+.backgroundImg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+  filter: brightness(50%);
+}
+
+@media only screen and (max-width: 767px) {
+  .mainWrapper {
+    height: 90%;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .forecast {
+    height: 30%;
+  }
+
+  .info {
+    justify-content: space-between;
+  }
+
+  .selectCity {
+    font-size: 1.2rem;
+  }
+
+  .forecastTemp {
+    display: none;
+  }
+
+  .forecast {
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .forecast {
+    justify-content: center;
+    height: 30%;
+    transition: 3s;
+  }
+
+  .currentTemp {
+    padding-right: 3rem;
+  }
+
+  .currentImg {
+    height: 8rem;
+    width: 8rem;
+  }
+
+  .today {
+    justify-content: center;
+    margin-right: 8px;
+  }
+
+  .temps {
+    margin-left: -1.75rem;
+  }
+
+  .nowTemp {
+    font-size: 2rem;
+  }
+
+  .forecastTemp {
+    margin-right: 8px;
+  }
+
+  .forecastImg {
+    height: 6rem;
+    width: 6rem;
+    border: 0px;
+  }
+
+  .nextDay {
+    font-size: 0.8rem;
+  }
+
+  .forecastTemps {
+    font-size: 0.8rem;
+  }
+
+  .forecastTempMax {
+    margin-right: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .forecast {
+    justify-content: center;
+    height: 30%;
+    transition: 3s;
+  }
+
+  .currentTemp {
+    padding-right: 3rem;
+  }
+
+  .currentImg {
+    height: 10rem;
+    width: 10rem;
+  }
+
+  .today {
+    justify-content: center;
+    margin-right: 12px;
+  }
+
+  .temps {
+    margin-left: -1.95rem;
+  }
+
+  .nowTemp {
+    font-size: 3rem;
+  }
+
+  .forecastTemp {
+    margin-right: 8px;
+  }
+
+  .forecastImg {
+    height: 8rem;
+    width: 8rem;
+    border: 0px;
+  }
+
+  .nextDay {
+    font-size: 1rem;
+  }
+
+  .forecastTemps {
+    font-size: 1rem;
+  }
+
+  .forecastTempMax {
+    margin-right: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .forecast {
+    justify-content: center;
+    height: 30%;
+  }
+
+  .currentTemp {
+    padding-right: 4rem;
+  }
+
+  .currentImg {
+    height: 11rem;
+    width: 11rem;
+  }
+
+  .today {
+    margin-right: 0px;
+  }
+
+  .temps {
+    margin-left: -20px;
+  }
+
+  .nowTemp {
+    font-size: 3rem;
+  }
+
+  .forecastTemp {
+    font-size: 1.25rem;
+    margin-right: 1.5rem;
+  }
+
+  .forecastImg {
+    height: 8rem;
+    width: 8rem;
+    border: 0px;
+  }
+
+  .nextDay {
+    font-size: 1rem;
+  }
+
+  .forecastTemps {
+    font-size: 1.25rem;
+  }
+
+  .forecastTempMax {
+    margin-right: 12px;
+  }
+}
