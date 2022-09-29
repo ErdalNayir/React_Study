@@ -1,0 +1,315 @@
+.App {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.radioButtonRed:after {
+  width: 27px;
+  height: 27px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #f06292;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+.radioButtonRed:checked::after {
+  width: 27px;
+  height: 27px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #652037;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+.radioButtonPurple:after {
+  width: 27px;
+  height: 27px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #ba68c8;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+.radioButtonPurple:checked::after {
+  width: 27px;
+  height: 27px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #4f2557;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+.radioButtonYellow:after {
+  width: 27px;
+  height: 27px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #ffd54f;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+.radioButtonYellow:checked::after {
+  width: 27px;
+  height: 27px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #786219;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+.radioButtonBlue:after {
+  width: 27px;
+  height: 27px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #4fc3f7;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+.radioButtonBlue:checked::after {
+  width: 27px;
+  height: 27px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #1a4d65;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+.radioButtonGreen:after {
+  width: 27px;
+  height: 27px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #aed581;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+.radioButtonGreen:checked::after {
+  width: 27px;
+  height: 27px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #445a2c;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+@media only screen and (max-width: 767px) {
+  .App {
+    flex-direction: column;
+  }
+
+  .radioButtonRed:after {
+    width: 20px;
+    height: 20px;
+  }
+
+  .radioButtonRed:checked::after {
+    width: 20px;
+    height: 20px;
+  }
+
+  .radioButtonPurple:after {
+    width: 20px;
+    height: 20px;
+  }
+
+  .radioButtonPurple:checked::after {
+    width: 20px;
+    height: 20px;
+  }
+
+  .radioButtonYellow:after {
+    width: 20px;
+    height: 20px;
+  }
+
+  .radioButtonYellow:checked::after {
+    width: 20px;
+    height: 20px;
+  }
+
+  .radioButtonBlue:after {
+    width: 20px;
+    height: 20px;
+  }
+
+  .radioButtonBlue:checked::after {
+    width: 20px;
+    height: 20px;
+  }
+
+  .radioButtonGreen:after {
+    width: 20px;
+    height: 20px;
+  }
+
+  .radioButtonGreen:checked::after {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .radioButtonRed:after {
+    width: 20px;
+    height: 20px;
+  }
+
+  .radioButtonRed:checked::after {
+    width: 20px;
+    height: 20px;
+  }
+
+  .radioButtonPurple:after {
+    width: 20px;
+    height: 20px;
+  }
+
+  .radioButtonPurple:checked::after {
+    width: 20px;
+    height: 20px;
+  }
+
+  .radioButtonYellow:after {
+    width: 20px;
+    height: 20px;
+  }
+
+  .radioButtonYellow:checked::after {
+    width: 20px;
+    height: 20px;
+  }
+
+  .radioButtonBlue:after {
+    width: 20px;
+    height: 20px;
+  }
+
+  .radioButtonBlue:checked::after {
+    width: 20px;
+    height: 20px;
+  }
+
+  .radioButtonGreen:after {
+    width: 20px;
+    height: 20px;
+  }
+
+  .radioButtonGreen:checked::after {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .radioButtonRed:after {
+    width: 25px;
+    height: 25px;
+  }
+
+  .radioButtonRed:checked::after {
+    width: 25px;
+    height: 25px;
+  }
+
+  .radioButtonPurple:after {
+    width: 25px;
+    height: 25px;
+  }
+
+  .radioButtonPurple:checked::after {
+    width: 25px;
+    height: 25px;
+  }
+
+  .radioButtonYellow:after {
+    width: 25px;
+    height: 25px;
+  }
+
+  .radioButtonYellow:checked::after {
+    width: 25px;
+    height: 25px;
+  }
+
+  .radioButtonBlue:after {
+    width: 25px;
+    height: 25px;
+  }
+
+  .radioButtonBlue:checked::after {
+    width: 25px;
+    height: 25px;
+  }
+
+  .radioButtonGreen:after {
+    width: 25px;
+    height: 25px;
+  }
+
+  .radioButtonGreen:checked::after {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+}
